@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	--gap: 16px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: var(--gap);
+
+	margin-left: auto;
+	margin-right: auto;
+
+	color: #141414;
+	background-color: #FAFAFA;
+
+	font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
+	font-size: 18px;
+	line-height: 1.4;
+
+	padding: 16px;
+	width: 100%;
+	max-width: 700px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+	font-size: 1.6em;
+}
+
+h2 {
+	font-size: 1.1em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+h4 {
+	font-size: .8em;
+}
+
+ol, ul {
+	padding: 0 0 0 18px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+}
+
+blockquote {
+	background-color: #ECECEC;
+	padding: 4px 16px;
+	border-radius: 5px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+code, pre {
+	font-family: "Monaco","Courier","monospace";
+	font-size: .8em;
+}
+
+pre {
+	border-left: thin solid rgba(55, 42, 26, 1);
+	padding-left: 4px;
+}
+
+@media (max-width: 400px) {
+	body {
+		font-size: 16px;
+		--gap: 8px;
+		padding: 8px;
+	}
+}

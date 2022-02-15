@@ -1,0 +1,24 @@
+{
+  "name": "note-taking-setup",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js",
+    "old_watch": "npx watch \"node build.js\" input --wait=0",
+    "watch": "node watch.js \"node build.js\"",
+    "serve": "npx live-server --no-css-inject --no-browser public",
+    "start": "npm run build && run-p watch serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "WTFPL",
+  "dependencies": {
+    "cheap-watch": "^1.0.4",
+    "live-server": "^1.2.1",
+    "marked": "^4.0.12",
+    "npm-run-all": "^4.1.5"
+  }
+}
