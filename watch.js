@@ -3,10 +3,6 @@ import cp from 'child_process'
 
 const watcher = new cheap_watch({
 	dir: `./input`,
-	filter({ path, stats }) {
-		console.log(`approving`, path)
-		return true
-	},
 })
 
 watcher.init()
