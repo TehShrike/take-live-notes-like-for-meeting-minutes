@@ -1,11 +1,14 @@
 {
-  "name": "note-taking-setup",
+  "name": "take-live-notes-like-for-meeting-minutes",
   "type": "module",
+  "repository": {
+  	"type": "git",
+  	"url": "git@github.com:TehShrike/take-live-notes-like-for-meeting-minutes.git"
+  },
   "version": "1.0.0",
-  "description": "",
+  "description": "Edit markdown in one window, have a rendered version show up in a different browser window, updating live",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build.js",
     "old_watch": "npx watch \"node build.js\" input --wait=0",
     "watch": "node watch.js \"node build.js\"",
@@ -13,7 +16,7 @@
     "start": "npm run build && run-p watch serve"
   },
   "keywords": [],
-  "author": "",
+  "author": "TehShrike",
   "license": "WTFPL",
   "dependencies": {
     "cheap-watch": "^1.0.4",
