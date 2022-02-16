@@ -13,7 +13,9 @@ const put_into_index_html = html => `
 	<main>${html}</main>
 	<script>
 		window.addEventListener('load', () => {
-			window.scrollTo(0, document.scrollingElement.scrollHeight)
+			setTimeout(() => {
+				window.scrollTo(0, document.scrollingElement.scrollHeight)
+			}, 0)
 		})
 	</script>
 </body>
